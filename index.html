@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,44 +8,112 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;0,900;1,400;1,600&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+
     <!-- Layout principal -->
     <div class="layout">
         <!-- Barra Lateral {InfoUsuario} -->
         <aside class="layout__aside">
             <section class="aside__userInfo">
-               <!-- Informacion General -->
+                <!-- Informacion General -->
                 <div class="userInfo__general">
                     <div class="userInfo__containerImg">
                         <img src="./assets/img/default-user.jpg" alt="Imagen Nils Pineda" class="userInfo__img">
-                    </div>                    
+                    </div>
                     <h3 class="userInfo__name">Nils Pineda</h3>
                     <h4 class="userInfo__job">Diseñador Web | Desarrollador web</h4>
-                    
+
                 </div>
-               <!-- Menu Navegacion -->
-               <ul>
-                <li>Nils</li>
-                <li></li>
-                <li></li>
-                <li></li>
-               </ul>
+                <!-- Menu Navegacion -->
+                <nav class="layout__menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__link">
+                                <i class="fa-solid fa-house menu__icon"></i>
+                                <span class="menu__overlay">Home</span>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="sobreMi.html" class="menu__link">
+                                <i class="fa-solid fa-user menu__icon"></i>
+                                <span class="menu__overlay">Sobre Mi</span>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="estudio.html" class="menu__link">
+                                <i class="fa-solid fa-graduation-cap menu__icon"></i>
+                                <span class="menu__overlay">Estudios</span>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="trabajos.html" class="menu__link">
+                                <i class="fa-solid fa-briefcase menu__icon"></i>
+                                <span class="menu__overlay">Trabajos</span>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="blog.html" class="menu__link">
+                                <i class="fa-solid fa-book menu__icon"></i>
+                                <span class="menu__overlay">Blog</span>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contacto.html" class="menu__link">
+                                <i class="fa-solid fa-envelope menu__icon"></i>
+                                <span class="menu__overlay">Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
 
-               <!--  Links redes sociales -->
+                <!--  Links redes sociales -->
+                <div class="userInfo__links">
+                    <ul class="links__social">
+                        <li class="social__item">
+                            <a href="#" class="menu__link">
+                                <i class="fa-brands fa-instagram menu__icon"></i>
+                            </a>
+                        </li>
 
-               <!-- Boton -->
+                        <li class="social__item">
+                            <a href="#" class="menu__link">
+                                <i class="fa-brands fa-facebook social__icon"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="menu__link">
+                                <i class="fa-brands fa-whatsapp social__icon"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="menu__link">
+                                <i class="fa-brands fa-linkedin-in social__icon"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="#" class="menu__link">
+                                <i class="fa-solid fa-envelope social__icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Boton -->
 
 
-               <!-- Footer -->
-                
+               
+                <!-- Footer -->
+
             </section>
         </aside>
     </div>
 
 
 </body>
+
 </html>
