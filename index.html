@@ -104,16 +104,37 @@
                     </ul>
                 </div>
                 <!-- Boton -->
-
+                <div class="userInfo__buttons">
+                    <a href="http://" class="userInfo__btn">Descargar CV</a>
+                </div>
 
                
                 <!-- Footer -->
+                <footer class="userInfo__footer">
+                    <p class="year"></p>
+                </footer>
 
             </section>
         </aside>
+
+        <!-- Contenido Principal -->
+        <main class="layout__content">
+            <section class="content__page">
+                <h1 class="page__name">Nils Pineda Vargas</h1>
+                <h2 class="page__job">Diseñador y Desarrollador Web</h2>
+            </section>
+        </main>
     </div>
 
 
+    <script>
+        const fecha = new Date().getFullYear();
+        
+        document.querySelector('.year').innerHTML = 
+        `<p>  &copy; ${fecha} Nils Pineda Vargas</p>`
+        
+    </script>
 </body>
+
 
 </html>
