@@ -1,14 +1,20 @@
-/* Estilos Generales */
+/* Variables */
+
 :root {
     --primary: #fff;
     --secondary: #04B4E0;
     --bg: #f2f7f9;
     --transparent: transparent;
+    
+    
     --colorIcon: #b5b6b7;
-    --colorSubtitle: #888
-
+    --colorTitle: #222;
+    --colorSubtitle: #888;
+    --colorText: #555
+    
 }
 
+/* Estilos Generales */
 
 
 /* Layuot */
