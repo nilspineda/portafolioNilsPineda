@@ -2,7 +2,7 @@
 
 :root {
     --primary: #fff;
-    --secondary: #04B4E0;
+    --secondary: #8189d7;
     --bg: #f2f7f9;
     --transparent: transparent;
     
@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
     /*areadelcontenido*/display: grid;
     grid-template-areas: "aside content";
     grid-template-columns: 30% 70%;
+
     /*sombraLayout*/
     border-radius: 4rem ;
      -webkit-border-radius: 4rem ;
@@ -97,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     position: relative;
     width: 18rem;
-    margin-top: 7rem;
+    margin-top: 8rem;
     background-color: var(--primary);
     border: 5px solid var(--primary);
     border-radius: 20rem;
@@ -111,15 +112,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .userInfo__name {
     font-size: 3.5rem;
-    margin-top: 2.4rem;
-    
+    margin-top: 3rem;
     color: var(--primary);
 }
 .userInfo__job {
-    
     font-size: 1.7rem;
     font-weight: 200;
     color: var(--primary);
+    margin: 2rem;
 }
 
 .userInfo__img {
@@ -139,10 +139,11 @@ h1, h2, h3, h4, h5, h6 {
 .links__social{
     margin-top: 2rem;
     display: flex;
-    gap: 2rem;
+    gap: 2.8rem;
 }
 
 .social__item{
+    
     height: 3rem;
     width: 3rem;
     line-height: 3rem;
@@ -156,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .social__item:hover{
     opacity: 1;
-    font-size: 2rem;
+    font-size: 1.8rem;
     background-color: rgba(255,255,255,0.20);
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -239,42 +240,68 @@ color: var(--colorTitle);
 .page__job {
     font-size: 2.3rem;
     font-weight: lighter;
-    color: var(--colorSubtitle);
+    /* color: var(--colorSubtitle); */
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Menu Navegacion lateral */
 .layout__menu{
-    display: none !important;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -110px ;
+    background-color: var(--transparent);
+    min-width: 11rem;
 }
 
 
+.menu__list {
+    position: relative;
+    background-color: var(--primary);
+    width: 60%;
+    min-height: 40rem;
+    box-shadow: 0,0,3rem, -0.5rem rgba(0, 0, 0, 0.15);
+    border-radius: 6rem;
+    -webkit-border-radius: 6rem;
+    -moz-border-radius: 6rem;
+    -ms-border-radius: 6rem;
+    -o-border-radius: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    margin-left: 2.5rem;
+    
+    
+    
+}
+
+.menu__item{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+.menu__item:hover .menu__icon{
+    color: var(--secondary);
+    transition: all 250ms linear;
+    -webkit-transition: all 250ms linear;
+    -moz-transition: all 250ms linear;
+    -ms-transition: all 250ms linear;
+    -o-transition: all 250ms linear;
+}
+
+.menu__overlay{
+    opacity: 0;
+    display: none;
+}
+
+
+
+.menu__icon{
+    color: var(--colorIcon);
+    font-size: 2.8rem;
+}
